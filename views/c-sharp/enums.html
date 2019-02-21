@@ -1,0 +1,23 @@
+Microsoft: DEV204.3x
+Algorithms and Data Structures in C#
+
+<h3>Enums</h3>
+
+<p>also known as an enumeration type.</p>
+
+
+
+<ul>
+    <li>a structure that enables you to create a variable with a fixed set of possible values</li>
+    <li>a common example would be the days of the week</li>
+    <li>A best practice would be to define your enum directly within a namespace so that all classes in that namespace will have access to it, if needed</li>
+    <li>eg: enum Day { Sunday = 1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };</li>
+    <li>The keyword enum is used to specify the "type" that the variable Day will be.</li>
+    Each member of an enum has a name and a value. The name is the string you define in the braces, such as Sunday or Monday. By default, the value is an integer. If you do not specify a value for each member, the members are assigned incremental values starting with 0. For example, Day.Sunday is equal to 0 and Day.Monday is equal to 1.
+    Using Enum Names and Values Interchangeably
+
+// Set an enum variable by name.
+Day favoriteDay = Day.Friday;
+// Set an enum variable by value.
+Day favoriteDay = (Day)4;
+</ul>

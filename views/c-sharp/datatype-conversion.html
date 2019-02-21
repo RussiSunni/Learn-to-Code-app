@@ -1,0 +1,46 @@
+<h3>Datatype Conversion</h3>
+
+
+
+<ul>
+    <li>implicit </li>
+    <li>explicit</li>
+</ul>
+
+
+<h4>Implicit</h4>
+<p>will happen if there is no data loss, and no exceptions to be thrown. For example, from a smaller datatype to a larger.</p>
+
+
+
+<h4>Explicit</h4>
+
+<ul>
+    <li>
+        <h5>The Typecase Operator</h5>
+        <ul>
+            <li>if datatype cannot hold the variable amount, does not throw an exception</li>
+        </ul>
+    </li>
+    <li>
+        <h5>The Conversion Class</h5>
+        <ul>
+            <li>several methods for different datatypes</li>
+            <li>if datatype cannot hold the variable amount, throws an exception</li>
+        </ul>
+    </li>
+    <li>
+        <h5>Parse and Try Parse</h5>
+        <ul>
+            <li> <h6>Parse</h6></li>
+            <li>can be used when converting from int to string types, and visa versa.</li>
+            <li>eg: int.Parse(variableName)</li>
+            <li> <h6>Try Parse</h6></li>
+            <li>In case the original datatype cannot be converted to the target datatype.</li>
+            <li>eg: int.TryParse(variableName, out outputResultVariable)</li>
+            <li>TryParse as a method also takes on the values of either 'true' or 'false', depending on whether the parse is successful or not.</li>
+            <li>can use this in an 'if' statement.</li>
+            <li>use Parse if you are sure it will work.</li>
+        </ul>
+    </li>
+</ul>
